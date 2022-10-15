@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import BienImmobilier from '../components/bien-immobilier/bien-immobilier.vue'
+import Asset from '../components/Assests/AssetData.vue'
 </script>
 
 <template>
   <main>
-    <BienImmobilier />
+    <Asset />
   </main>
 </template>
 

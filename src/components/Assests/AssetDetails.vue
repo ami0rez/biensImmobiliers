@@ -1,24 +1,24 @@
 <template>
-  <div class="bien-imm-details-container">
+  <div id="asset-details" class="bien-imm-details-container">
     <div class="bien-imm-details-box m-10-20">
-      <div class="bien-imm-details-item">
+      <div id="asset-details-address" class="bien-imm-details-item">
         Addresse : {{value?.address_line1}}
       </div>
-      <div class="bien-imm-details-item">
+      <div id="asset-details-city" class="bien-imm-details-item">
         Ville : {{value?.ville}}
       </div>
-      <div class="bien-imm-details-item">
+      <div id="asset-details-type" class="bien-imm-details-item">
         Type : {{value?.type}}
       </div>
-      <div class="bien-imm-details-item">
+      <div id="asset-details-description" class="bien-imm-details-item">
         Details : {{value?.description}}
       </div>
-      <div class="bien-imm-details-item f-grow flex-bottom-end">
-        Prix : {{value?.prix}}
+      <div id="asset-details-price" class="bien-imm-details-item f-grow flex-bottom-end">
+        Prix : {{value?.prix}} {{value?.unit}}
       </div>
     </div>
     <div class="bien-imm-details-box border-round flex-center m-10-20">
-      <img :src="value?.photo" alt="Photo">
+      <img id="asset-details-image" :src="value?.photo" alt="Photo">
     </div>
   </div>
   
@@ -29,7 +29,7 @@ import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   props:['value'],
-  name: "BienImmobilierDetailsComponent",
+  name: "AssetDetailsComponent",
   setup() {
    
   },
